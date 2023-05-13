@@ -1,0 +1,23 @@
+{
+    "name": "test-de-recrutement/test-de-recrutement",
+    "type": "test",
+    "description": "Test de recrutement pour AcWebagency",        
+    "authors": [
+        {
+            "name": "minh-bao",
+            "email": "mbnguyen@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpmd/phpmd" : "@stable"
+    }
+}
