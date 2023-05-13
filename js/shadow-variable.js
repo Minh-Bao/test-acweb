@@ -13,6 +13,7 @@ const articleList = [[1, 2, 3, 4], [1, 1, 5, 7, 8, 5, 2, 1, 4], [8, 7, 8, 7], [1
 let kudos = 5;
 
 /**
+ * Calcule le total de kudos
  * 
  * @param {array} articles 
  * @returns {number}
