@@ -47,8 +47,8 @@ class Customer
      * @return string
      * @throws Exception
      */
-    public function statement(): string {
-
+    public function statement(): string 
+    {
         $totalAmount = 0.0;
         $frequentRenterPoints = 0;
         $result = "Rental Record for " . $this->name . "\n";
