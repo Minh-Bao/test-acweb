@@ -1,25 +1,39 @@
+
+//Création de variable pour la réutilisation de même règles
+/*Variable*/
+$primary-shadow: 0.55rem 0.55rem #FFFFFF;
+$secondary-shadow: 0.55rem 0.55rem #15FFF5;
+$margin: 1rem;
+$semi-margin: 0.5rem;
+
+// Création de mixin pour la réutilisation de plusieurs règles similaires
+/*Mixin*/
+@mixin footer-border{
+    margin: $semi-margin;
+    text-shadow: $secondary-shadow;
+}
+
+//Utilisation des imbrications de selecteurs css pour une meilleur lisibilité
 /* Footer */
 #footer {
-  text-shadow: 0.55rem 0.55rem #FFFFFF;
-}
+    text-shadow: $primary-shadow;
 
-#footer .form__footer {
-  margin: 1rem;
-  text-shadow: 0.55rem 0.55rem #15FFF5;
-}
+    .form__footer {
+        margin: $margin;
+        text-shadow: $secondary-shadow;
+    }
 
-#footer .cgv__footer {
-  margin: 0.5rem;
-  text-shadow: 0.55rem 0.55rem #15FFF5;
-}
+    .cgu__footer {
+        @include footer-border();
+    }
 
-#footer .cgv__footer .button {
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
+    .cgv__footer {
+        @include footer-border();
 
-#footer .cgu__footer {
-  margin: 0.5rem;
-  text-shadow: 0.55rem 0.55rem #15FFF5;
+        .button {
+            margin: $margin;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
 }
