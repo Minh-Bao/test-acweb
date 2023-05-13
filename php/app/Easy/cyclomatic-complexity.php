@@ -6,11 +6,12 @@ namespace App\Easy;
 class FormatBytes
 {
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+   /**
+    * Undocumented function
+    *
+    * @param integer $precision
+    * @param array<string> $unit
+    */
     public function __construct(public readonly int $precision, public readonly array $unit)
     {
         $precision = 2;

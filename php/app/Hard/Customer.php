@@ -23,7 +23,7 @@ class Customer
      * Modifié la visibilité de private en public readonly (php8.2) anfin de ne pas avoir à créer de getter et setter et empecher tout de même leur modifications.
      *
      * @param string $name
-     * @param array $rentals
+     * @param array<Rental> $rentals
      */
     public function __construct(public readonly string $name, private array $rentals)
     {
