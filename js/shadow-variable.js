@@ -12,6 +12,11 @@
 const articleList = [[1, 2, 3, 4], [1, 1, 5, 7, 8, 5, 2, 1, 4], [8, 7, 8, 7], [1],]; // In a real app this list would be full of articles.
 let kudos = 5;
 
+/**
+ * 
+ * @param {array} articles 
+ * @returns {number}
+ */
 function calculateTotalKudos(articles) {
     let kudos = 0;
 
