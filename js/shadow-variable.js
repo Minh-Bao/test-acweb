@@ -13,16 +13,16 @@ const articleList = [[1, 2, 3, 4], [1, 1, 5, 7, 8, 5, 2, 1, 4], [8, 7, 8, 7], [1
 let kudos = 5;
 
 /**
- * Calcule le total de kudos
  * 
  * @param {array} articles 
- * @returns {number}
+ * @param {number} maxKudos 
+ * @returns 
  */
-function calculateTotalKudos(articles) {
+function calculateTotalKudos(articles, maxKudos) {
     let kudos = 0;
 
     for (let article of articles) {
-        kudos += Math.min(article.length, 5);
+        kudos += Math.min(article.length, maxKudos);
     }
 
     return kudos;
@@ -30,5 +30,5 @@ function calculateTotalKudos(articles) {
 
 document.write(`
     <p>Maximum kudos you can give to an article: ${kudos}</p>
-    <p>Total Kudos already given across all articles: ${calculateTotalKudos(articleList)}</p>
+    <p>Total Kudos already given across all articles: ${calculateTotalKudos(articleList, kudos)}</p>
 `);
