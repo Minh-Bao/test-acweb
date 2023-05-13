@@ -1,9 +1,9 @@
 <?php
 
+
 namespace App\Easy;
 
-
-class FormatBytes
+class Cyclomatic_complexity
 {
 
    /**
