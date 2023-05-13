@@ -11,6 +11,7 @@ Refactorisez les codes en expliquant votre résonnement en commentaire (2 jours)
     - J'ai complété et refactorisé la méthode calculateTotalKudos() afin de corrier le script. 
     - Come je l'explique dans le fichier je n'ai pas été jusqu'au bout du refacto pour rester dans le thème de l'exo a savoir la porté des déclaration de variables (si je comprend bien la notion de shadow variable)
 - 1 exo SCSS
+    - J'ai utilisé les variables et mixinet l'imbrication des selecteurs css afin d'avoir du code réutilisable et pour éviter d'avoir des selecteurs en doublon qui se balladent..
 
 
 
